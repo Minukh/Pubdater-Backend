@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Dependencies</title>
+</head>
+<body>
+    <h1>Submit Dependencies</h1>
+    <form method="POST" action="/process_dependencies/">
+        {% csrf_token %}
+        <textarea name="dependencies" rows="10" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
